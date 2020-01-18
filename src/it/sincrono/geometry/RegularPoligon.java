@@ -11,17 +11,21 @@ public abstract class RegularPoligon implements GeometricShape {
 	
 	private Double side;
 	private Double height;
+	private Double perimeter;
+	
+	public Double getSide() {
+		return side;
+	};
+	
+	public Double getHeight() {
+		return height;
+	}
 	
 	@Override
-	public Double getArea() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public Double getPerimeter() {
-		// TODO Auto-generated method stub
-		return null;
+		return perimeter;
 	}
+	
+	
 
 }
