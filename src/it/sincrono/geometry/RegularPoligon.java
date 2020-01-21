@@ -9,12 +9,21 @@ package it.sincrono.geometry;
  */
 public abstract class RegularPoligon implements GeometricShape {
 	
-	private Double side;
-	private Double height;
-	private Double perimeter;
+	protected Double sideLength;
+	protected Double height;
+	protected Double perimeter;
+	protected Double area;
 	
-	public Double getSide() {
-		return side;
+	protected final int sides;
+	
+	public abstract Double getArea();
+	
+	protected RegularPoligon(int sides) {
+		this.sides = sides;
+	}
+	
+	public Double getSideLength() {
+		return sideLength;
 	};
 	
 	public Double getHeight() {
