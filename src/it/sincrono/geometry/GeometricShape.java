@@ -2,7 +2,10 @@ package it.sincrono.geometry;
 
 public interface GeometricShape {
 	
-	Double getArea();
+	Double getWidth();
+	Double getHeight();
 	Double getPerimeter();
+	Double getArea();
+	
 	
 }

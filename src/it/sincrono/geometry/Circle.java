@@ -3,48 +3,55 @@ package it.sincrono.geometry;
 public class Circle implements GeometricShape {
 	
 	private Double radius;
+	private Double diameter;
 	private Double circumference;
 	private Double area;
 	
 	
+	public Circle(Double radius) {
+		this.radius = radius;
+		diameter = radius * 2;
+		circumference = Math.PI * diameter;
+		area = Math.PI * radius*radius;
+	}
 	
-	/**
-	 * @return The radius
-	 */
+
+	public void setRadius(Double radius) {
+		this.radius = radius;
+		diameter = radius * 2;
+		circumference = Math.PI * diameter;
+		area = Math.PI * radius*radius;
+	}
+
 	public Double getRadius() {
 		return radius;
 	}
-
-	/**
-	 * @param Radius of the circumference
-	 */
-	public void setRadius(Double radius) {
-		this.radius = radius;
-		this.circumference = 2*Math.PI * radius;
-		this.area = Math.PI * Math.pow(radius, 2);
-	}
-
-	/**
-	 * @return The circumference
-	 */
-	public Double getCincumference() {
+	public Double getCircumference() {
 		return circumference;
 	}
+
+	public Double getDiameter() {
+		return diameter;
+	}
 	
-	/**
-	 * @return The area of the circle
-	 */
 	@Override
 	public Double getArea() {
 		return area;
 	}
 
-	/**
-	 * @return The circumference
-	 */
 	@Override
 	public Double getPerimeter() {
-		return getCincumference();
+		return circumference;
+	}
+
+	@Override
+	public Double getWidth() {
+		return diameter;
+	}
+
+	@Override
+	public Double getHeight() {
+		return diameter;
 	}
 
 }
