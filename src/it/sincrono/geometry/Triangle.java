@@ -6,9 +6,6 @@ public class Triangle extends RegularPoligon {
 	
 	public Triangle(Double sideLength) {
 		super(3, sideLength);
-		this.sideLength = sideLength;
-		perimeter = sideLength * 3;
-		area = computeArea(sideLength);
 	}
 	
 	
