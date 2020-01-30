@@ -9,7 +9,6 @@ import it.sincrono.garage.Auto.Alimentazione;
 import it.sincrono.garage.Furgone;
 import it.sincrono.garage.Garage;
 import it.sincrono.garage.Moto;
-import it.sincrono.garage.Veicolo;
 
 public class Application_Garage {
 
@@ -138,13 +137,14 @@ public class Application_Garage {
 				break;
 
 			case 3:
-				for (int i = 0; i < garage.posti; i++)
+				for (int i = 0; i < Garage.posti; i++)
 					System.out.println("[" + i + "] " + garage.veicoloIn(i));
 				break;
 			}
 
 		} while (loop);
-
+		
+		in.close();
 		System.out.println("Il garage chiude!");
 
 	}

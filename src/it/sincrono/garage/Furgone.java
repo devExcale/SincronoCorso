@@ -4,13 +4,11 @@ public class Furgone extends Veicolo {
 	
 	private double capacita;
 
-	// costruttore superclase
 	public Furgone(String marca, int anno, int cilindrata, double capacita) {
 		super(Tipo.FURGONE, marca, anno, cilindrata);
 		this.capacita = capacita;
 	}
 
-	// get e set
 	public double getCapacita() {
 		return capacita;
 	}

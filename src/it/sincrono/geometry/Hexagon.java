@@ -12,7 +12,6 @@ public class Hexagon extends RegularPoligon {
 	
 	@Override
 	protected Double computeHeight() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -23,13 +22,11 @@ public class Hexagon extends RegularPoligon {
 
 	@Override
 	protected Double computeArea() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void setSideLength(Double sideLength) {
-		// TODO Auto-generated method stub
 
 	}
 

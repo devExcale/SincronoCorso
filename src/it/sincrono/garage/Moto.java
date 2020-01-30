@@ -17,7 +17,7 @@ public class Moto extends Veicolo {
 
 	@Override
 	public String toString() {
-		return "Auto [Marca: " + marca
+		return "Moto [Marca: " + marca
 				+ "; Anno:" + anno
 				+ "; Cilindrata:" + cilindrata
 				+ "; Tempi: " + tempi + "]";

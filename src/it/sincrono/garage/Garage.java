@@ -22,7 +22,6 @@ public class Garage {
 	}
 
 	public Veicolo esciVeicolo(int posto) {
-		// TODO: ciclo dimenticato
 		Veicolo v = null;
 		if (posto >= 0 && posto < 15) {
 			v = veicoli[posto];
