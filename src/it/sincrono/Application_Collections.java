@@ -8,7 +8,7 @@ public class Application_Collections {
 
 	public static void main(String[] args) {
 		Set<String> hs = new HashSet<String>();
-		
+
 		hs.add("1");
 		hs.add("22");
 		hs.add("333");
@@ -19,16 +19,39 @@ public class Application_Collections {
 		hs.add("88888888");
 		hs.add("999999999");
 		hs.add("0000000000");
+		hs.add("1111111111");
+		hs.add("AAAAAAAAAAAAAAAAAAAAAAAA");
 		System.out.println(hs.toString());
-		
-		Iterator<String> i = hs.iterator();
+
+		System.out.println("La stringa piu' lunga e': " + longest(hs.iterator()));
+		System.out.println("Le stringhe piu' lunghe sono:");
+		System.out.println(longests(hs.iterator()));
+
+	}
+
+	private static String longest(Iterator<String> i) {
 		String longest = "", tmp;
-		
-		while(i.hasNext())
-			if((tmp = i.next()).length() > longest.length())
+
+		while (i.hasNext())
+			if ((tmp = i.next()).length() > longest.length())
 				longest = tmp;
-		System.out.println("La stringa piu' lunga e': " + longest);
-		
+		return longest;
+	}
+
+	private static String longests(Iterator<String> i) {
+		String longests = "", tmp;
+		int longest = longests.length();
+
+		while (i.hasNext()) {
+			tmp = i.next();
+			if (tmp.length() == longest)
+				longests += tmp + "\n";
+			else if (tmp.length() > longest) {
+				longest = tmp.length();
+				longests = tmp + "\n";
+			}
+		}
+		return longests;
 	}
 
 }
