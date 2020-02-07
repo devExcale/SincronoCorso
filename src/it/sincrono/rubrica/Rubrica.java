@@ -23,7 +23,8 @@ public class Rubrica {
 	public String cerca(String nome, String cognome) {
 		String numero = null;
 		Contatto c = elenco.stream()
-				.filter(contatto -> (contatto.getNome() == nome && contatto.getCognome() == cognome)).findFirst()
+				.filter(contatto -> (contatto.getNome() == nome && contatto.getCognome() == cognome))
+				.findFirst()
 				.orElse(null);
 		if (c != null)
 			numero = c.getNome();
