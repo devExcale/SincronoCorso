@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Anagrafiche>
+    <Anagrafica codFiscale="ABCDEfghi0123456">
+        <cognome>Rossi</cognome>
+        <data_nascita>1960-10-10 00:00:00</data_nascita>
+        <nome>Paolo</nome>
+    </Anagrafica>
+    <Anagrafica codFiscale="GIUSEPVRDI123456">
+        <cognome>Totti</cognome>
+        <data_nascita>1976-09-27 00:00:00</data_nascita>
+        <nome>Francesco</nome>
+    </Anagrafica>
+    <Anagrafica codFiscale="PRF45ABCD0123456">
+        <cognome>Milian</cognome>
+        <data_nascita>1945-01-01 00:00:00</data_nascita>
+        <nome>Thomas</nome>
+    </Anagrafica>
+</Anagrafiche>
